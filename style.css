@@ -3,7 +3,9 @@
     padding: 0;
     font-family: 'Mulish', sans-serif;
 }
-
+html, body {
+    overflow-x: hidden;
+}
 /* navbar section */
 .navbar {
     box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
@@ -187,7 +189,7 @@
 
 .restaurant-list {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     margin-bottom: 80px;
     padding-top: 39px;
@@ -370,7 +372,7 @@
     display: flex;
     justify-content: space-around;
     max-width: 1200px;
-    min-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 76px 0;
 }
